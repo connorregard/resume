@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connor Regard, EIT - Sales Development Representative</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.15;
+            color: #000;
+            background-color: #fff;
+            padding: 0;
+            font-size: 10pt;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding-bottom: 5px;
+            margin-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 1.6em;
+            color: #000;
+            margin-bottom: 3px;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: #000;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Titles */
+        .section {
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-size: 1.1em;
+            color: #000;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 2px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Experience Section */
+        .job {
+            margin-bottom: 6px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .job-title {
+            font-size: 1em;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .job-date {
+            font-style: italic;
+            color: #000;
+            font-size: 0.85em;
+        }
+
+        .company {
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 2px;
+            font-size: 0.9em;
+        }
+
+        .job-description ul {
+            margin-left: 15px;
+            margin-top: 2px;
+            margin-bottom: 0;
+        }
+
+        .job-description li {
+            margin-bottom: 2px;
+            line-height: 1.2;
+        }
+
+        /* Education Section */
+        .education-item {
+            margin-bottom: 5px;
+        }
+
+        .degree-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .degree {
+            font-size: 1em;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .school {
+            font-weight: bold;
+            color: #000;
+            font-size: 0.9em;
+        }
+
+        .gpa {
+            margin-top: 1px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .involvement {
+            margin-top: 2px;
+            font-style: italic;
+            font-size: 0.85em;
+            line-height: 1.2;
+        }
+
+        /* Projects Section */
+        .project {
+            margin-bottom: 6px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .project-title {
+            font-size: 1em;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .project-description {
+            margin-top: 2px;
+        }
+
+        .project-description ul {
+            margin-left: 15px;
+            margin-top: 2px;
+            margin-bottom: 0;
+        }
+
+        .project-description li {
+            margin-bottom: 2px;
+            line-height: 1.2;
+        }
+
+        .project-skills {
+            margin-top: 2px;
+            font-weight: bold;
+            color: #000;
+            font-size: 0.85em;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+        }
+
+        .skill-item {
+            padding: 3px;
+            background-color: #fff;
+            font-size: 0.85em;
+            line-height: 1.2;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                font-size: 9.5pt;
+            }
+
+            .container {
+                padding: 0.2in 0.4in;
+                max-width: 100%;
+            }
+
+            @page {
+                margin: 0.4in 0.5in;
+                size: letter;
+            }
+
+            .section {
+                margin-bottom: 4px;
+            }
+
+            .job {
+                margin-bottom: 4px;
+            }
+
+            .project {
+                margin-bottom: 4px;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .job-header, .degree-header, .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Connor Regard, EIT</h1>
+            <div class="contact-info">
+                <a href="mailto:connorregard1@gmail.com">connorregard1@gmail.com</a> | 
+                (318) 268-2970 | 
+                Dallas, TX | 
+                <a href="https://www.connorregard.com" target="_blank">connorregard.com</a>
+            </div>
+        </header>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Product Strategy Analyst (Contract)</span>
+                    <span class="job-date">May 2025 to Present</span>
+                </div>
+                <div class="company">StudyForFE | Remote</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Spearheaded customer acquisition initiatives for national SaaS education platform serving thousands of engineering students, driving revenue growth through optimized sales funnels and AI-driven lead nurture strategies</li>
+                        <li>Conducted in-depth competitive market analysis and SEO research to identify high-value opportunities, demonstrating strong analytical and problem-solving skills that improved organic visibility and qualified lead generation</li>
+                        <li>Built strong relationships with founder and cross-functional stakeholders, managing student discovery calls during onboarding to deliver consultative sales approach that identified pain points and matched prospects with solutions</li>
+                        <li>Demonstrated entrepreneurial spirit by proactively identifying business challenges and implementing creative AI-powered automation tools, taking ownership of opportunities while working collaboratively in team-selling environment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Data Engineer</span>
+                    <span class="job-date">July 2025 to Present</span>
+                </div>
+                <div class="company">Telios | Dallas, TX</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Established strong relationships with clients, contractors, and cross-functional engineering teams on large-scale data center and technology infrastructure projects, serving as trusted technical advisor and primary liaison for resolving coordination issues</li>
+                        <li>Quickly ramped on complex low voltage systems and data center architecture, translating technical concepts into clear presentations and documentation for diverse audiences including C-suite executives and technical staff using Revit</li>
+                        <li>Developed deep expertise in cloud infrastructure environments through hands-on work with data center architecture, managing project timelines and deliverables with strong time management skills while collaborating effectively across different functions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Founder & Operator</span>
+                    <span class="job-date">April 2018 to August 2022</span>
+                </div>
+                <div class="company">CR Pressure Washing | Shreveport, LA</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Demonstrated entrepreneurial spirit by building and scaling service business from ground up at age 16, acquiring 70+ residential clients through creative outbound prospecting strategies including door-to-door sales, cold calling, and email campaigns</li>
+                        <li>Established strong relationships with customers through excellent communication and customer-centric approach, executing full sales cycle from lead generation to service delivery with high satisfaction rates and consistent referral business</li>
+                        <li>Applied open-minded, creative attitude to continually test new approaches and exceed sales expectations while managing all business operations with strong time management skills as a full-time student</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <h2 class="section-title">Sales & Technical Projects</h2>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">BNR Strategies – AI-Powered Client Acquisition System</span>
+                    <span class="job-date">2025</span>
+                </div>
+                <div class="project-description">
+                    <ul>
+                        <li>Developed and deployed proof-of-concept AI-powered client acquisition system integrating landing pages, automated follow-up sequences, and booking workflows with agentic AI solutions including chat widgets, instant response automation, and intelligent lead routing</li>
+                        <li>Demonstrated ability to architect end-to-end AI solutions, understand enterprise AI market applications including RAG and agent-based systems, and execute technical implementations that solve real business problems</li>
+                    </ul>
+                </div>
+                <div class="project-skills">
+                    <strong>Skills:</strong> AI Architecture, Agentic AI Systems, Sales Automation, Lead Generation, Marketing Technology, CRM Implementation, Customer Journey Mapping, Conversion Optimization, Problem-Solving
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Automated Bartender System – LSU Senior Design</span>
+                    <span class="job-date">August 2024 to May 2025</span>
+                </div>
+                <div class="project-description">
+                    <ul>
+                        <li>Took initiative to lead cross-functional engineering team, establishing strong working relationships and collaborating effectively across different technical specialties while managing complete product development lifecycle</li>
+                        <li>Delivered compelling technical presentations to stakeholders and university leadership, demonstrating strong verbal and written communication skills</li>
+                    </ul>
+                </div>
+                <div class="project-skills">
+                    <strong>Skills:</strong> PLC Programming, Allen Bradley, AUTOCAD, Solidworks, Electrical Design, System Integration, Project Management, Team Leadership, Technical Presentations
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-item">
+                <div class="degree-header">
+                    <span class="degree">Bachelor of Science in Electrical Engineering</span>
+                    <span class="job-date">May 2025</span>
+                </div>
+                <div class="school">Louisiana State University | Baton Rouge, LA</div>
+                <div class="gpa">GPA: 3.57/4.00</div>
+                <div class="involvement">
+                    <strong>Leadership & Involvement:</strong> Academic Chair, SAE Fraternity | Member, Institute of Electrical and Electronics Engineers (IEEE) | Volunteer, Habitat for Humanity | Leader, Younglife
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree-header">
+                    <span class="degree">Engineer-In-Training (EIT) Certification</span>
+                    <span class="job-date">July 2025</span>
+                </div>
+                <div class="school">Board of Louisiana – Passed FE Electrical & Computer Exam</div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><strong>Sales & Business Development:</strong> Lead Generation, Lead Qualification, Outbound Prospecting, Cold Calling, Email Campaigns, Discovery Calls, Consultative Selling, Pipeline Management</div>
+                <div class="skill-item"><strong>Technical Proficiency:</strong> Cloud Infrastructure (Data Centers), PLC Programming, AUTOCAD, Revit, Salesforce CRM, Marketing Automation, AI Tools</div>
+                <div class="skill-item"><strong>SaaS & Digital Marketing:</strong> SEO Strategy, Competitive Analysis, Funnel Optimization, Marketing Analytics, Customer Journey Mapping, A/B Testing, Conversion Rate Optimization</div>
+                <div class="skill-item"><strong>Communication & Collaboration:</strong> Executive Presentations, Technical Documentation, Cross-Functional Team Leadership, Client Relations, Stakeholder Management</div>
+                <div class="skill-item"><strong>Project Management:</strong> Budget Management, Timeline Coordination, Resource Allocation, Vendor Management, Agile Methodologies, P
